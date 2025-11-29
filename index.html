@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio – Gaby</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0d1117;
+            color: #e6edf3;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: #161b22;
+            border-bottom: 1px solid #30363d;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #8b949e;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 0;
+        }
+        h2 {
+            font-size: 2rem;
+            border-left: 4px solid #238636;
+            padding-left: 10px;
+            margin-top: 40px;
+        }
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background: #161b22;
+            padding: 20px;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #238636;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #161b22;
+            border-top: 1px solid #30363d;
+            margin-top: 40px;
+        }
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Gaby – Développeur polyvalent & IA</h1>
+    <p>Programmation • IA • Cybersécurité • Trading • Développement Web • Stratégie</p>
+</header>
+
+<div class="container">
+
+    <h2>À propos</h2>
+    <p>
+        Je suis un créateur technique polyvalent capable de concevoir, automatiser, sécuriser 
+        et analyser des systèmes complexes. Mon expertise couvre l’IA, la cybersécurité, 
+        le développement web, l'automatisation, le trading algorithmique et les stratégies digitales.
+    </p>
+
+    <h2>Compétences</h2>
+    <div class="skills">
+        <div class="card"><strong>Développement :</strong><br>Python, JavaScript, Node.js, React, APIs, Automatisation</div>
+        <div class="card"><strong>IA :</strong><br>LLMs, Machine Learning, RAG, NLP, Agents autonomes</div>
+        <div class="card"><strong>Cybersécurité :</strong><br>Pentesting, OSINT, Sécurité réseau, Scripts Python</div>
+        <div class="card"><strong>Trading :</strong><br>Algo-trading, Backtesting, Analyse quantitative</div>
+        <div class="card"><strong>Web :</strong><br>Next.js, Tailwind, UX/UI</div>
+    </div>
+
+    <h2>Projets</h2>
+    <div class="projects">
+
+        <a class="card" href="projects/ai/" target="_blank">
+            <strong>Agent IA intelligent</strong><br>
+            Automatisation avancée, planification, exécution multi-modules.
+        </a>
+
+        <a class="card" href="projects/web/" target="_blank">
+            <strong>Dashboard React</strong><br>
+            Interface analytique moderne pour données financières.
+        </a>
+
+        <a class="card" href="projects/cybersecurity/" target="_blank">
+            <strong>Vulnérabilité Scanner</strong><br>
+            Analyse automatisée et rapports de sécurité.
+        </a>
+
+        <a class="card" href="projects/trading/" target="_blank">
+            <strong>Bot de Trading</strong><br>
+            Stratégies algorithmiques + API broker.
+        </a>
+
+    </div>
+
+    <h2>Contact</h2>
+    <p class="contact">
+        • Email : <a href="mailto:ton-email@gmail.com">ton-email@gmail.com</a><br>
+        • GitHub : <a href="https://github.com/">Ton GitHub</a><br>
+        • LinkedIn : ton-lien-linkedin
+    </p>
+
+</div>
+
+<footer>
+    © 2025 – Portfolio professionnel de Gaby
+</footer>
+
+</body>
+</html>
