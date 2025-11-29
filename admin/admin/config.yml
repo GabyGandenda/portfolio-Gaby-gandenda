@@ -1,1 +1,35 @@
+backend:
+  name: github
+  repo: GabyGandenda/portfolio-Gaby-gandenda
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "site"
+    label: "Configuration du site"
+    files:
+      - name: "settings"
+        label: "Informations générales"
+        file: "content/settings.json"
+        fields:
+          - { label: "Nom", name: "name", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "GitHub", name: "github", widget: "string" }
+          - { label: "LinkedIn", name: "linkedin", widget: "string" }
+          - { label: "Image de profil", name: "profile_image", widget: "image" }
+
+  - name: "projects"
+    label: "Projets"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Catégorie", name: "category", widget: "select", options: ["IA", "Web", "Cyber", "Trading", "Autres"] }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Lien", name: "link", widget: "string", required: false }
 
